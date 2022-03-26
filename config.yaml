@@ -1,6 +1,87 @@
 config:
   backup: true
+  banner: true
   create: true
   dotpath: dotfiles
+  keepdot: false
+  longkey: false
 dotfiles:
+  f_rc.conf:
+    src: config/ranger/rc.conf
+    dst: ~/.config/ranger/rc.conf
+  d_kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
+  d_bspwm:
+    src: config/bspwm
+    dst: ~/.config/bspwm
+  d_polybar:
+    src: config/polybar
+    dst: ~/.config/polybar
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  d_sxhkd:
+    src: config/sxhkd
+    dst: ~/.config/sxhkd
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
+  f_bashrc:
+    src: bashrc
+    dst: ~/.bashrc
+  f_bash_aliases:
+    src: bash_aliases
+    dst: ~/.bash_aliases
+  f_bash_profile:
+    src: bash_profile
+    dst: ~/.bash_profile
+  f_picom.conf:
+    src: config/picom/picom.conf
+    dst: ~/.config/picom/picom.conf
+  f_dunstrc:
+    src: config/dunst/dunstrc
+    dst: ~/.config/dunst/dunstrc
+  f_bashrc_1:
+    src: bashrc
+    dst: ~/.bashrc
+    chmod: '744'
+  f_bash_aliases_1:
+    src: bash_aliases
+    dst: ~/.bash_aliases
+    chmod: '644'
+  f_bash_profile_1:
+    src: bash_profile
+    dst: ~/.bash_profile
+    chmod: '644'
 profiles:
+  laptopToshiba:
+    dotfiles:
+    - f_rc.conf
+    - d_kitty
+    - d_bspwm
+#    - d_espanso
+    - d_polybar
+    - d_rofi
+    - d_sxhkd
+    - d_nvim
+ #   - f_aliases.zsh
+ #   - d_atareao
+ #   - f_zshrc
+    - f_bashrc
+    - f_bash_aliases
+    - f_bash_profile
+    - f_picom.conf
+    - f_dunstrc
+#    - f_backup.sh
+#    - d_gitui
+#    - f_betterlockscreenrc
+#    - f_backup.service
+#    - f_backup.timer
+#    - f_betterlockscreen@.service
+#  raspiarch:
+#    dotfiles:
+#    - f_rc.conf
+#    - d_nvim
+#    variables:
+#      dotfilesdir: ~/dotfiles

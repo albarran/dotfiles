@@ -1,0 +1,4 @@
+#PATH=$PATH:~/Archivos/000/scripts
+export PATH
+
+source ~/.bashrc

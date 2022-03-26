@@ -1,0 +1,24 @@
+alias cls="clear"
+alias tg="~/tg/bin/telegram-cli -k tg-server.pub -W -N"
+
+#alias mountlive="sudo mount -t cifs -o username=albarran,password='',uid=albarran,gid=albarran,forceuid,forcegid,  //livebox/discosUSB/WDMy_Passport_07A8/PAPWD500 ~/PAPWD"
+#alias mountlive="sudo curlftpfs 192.168.1.1 ~/PAPWD -o ssl,user=albarran:SALAMANCA75,allow_other,ftp_port=-"
+#alias umountlive="sudo umount ~/PAPWD"
+
+alias mountpi="sudo sshfs -o allow_other albarran@rpi1:/media/albarran/PAPWD500/var_mm  /home/albarran/PAPWD"
+alias umountpi="sudo umount /home/albarran/PAPWD"
+
+#battery life cli: https://askubuntu.com/questions/69556/how-to-check-battery-status-using-terminal
+#alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|percentage"'
+#watch --interval=5 acpi -V
+#alias bat="acpi -b"
+
+alias tmuxls="tmux ls"
+alias tmuxlist="tmux ls"
+alias tmuxkill="tmux kill-session -t"
+
+alias sshrpi1="ssh albarran@rpi1"
+
+#alias hamachids="sudo /etc/init.d/logmein-hamachi start; sleep 5; hamachi login"
+
+alias dotdrop=/home/albarran/dotfiles/dotdrop.sh
