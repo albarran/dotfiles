@@ -5,7 +5,7 @@
 -- Plugin: simrat39/rust-tools.nvim
 -- https://github.com/simrat39/rust-tools.nvim
 
-local extension_path = '/home/lorenzo/.vscode-oss/extensions/vadimcn.vscode-lldb-1.6.10/'
+local extension_path = '/home/albarran/.vscode-oss/extensions/vadimcn.vscode-lldb-1.6.10/'
 local codelldb_path = extension_path .. 'adapter/codelldb'
 local liblldb_path = extension_path .. 'lldb/lib/liblldb.so'
 

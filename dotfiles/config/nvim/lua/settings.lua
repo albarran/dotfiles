@@ -67,7 +67,7 @@ exec([[
 exec([[
   augroup templates
       au!
-      let g:template_name = 'Lorenzo Carbonell <a.k.a. atareao>'
+      let g:template_name = 'Pedro Albarran'
       autocmd BufNewFile *.* silent! execute '0r $HOME/.config/nvim/templates/'.expand("<afile>:e").'.tpl'
       autocmd BufNewFile * %s/{{YEAR}}/\=strftime('%Y')/ge
       autocmd BufNewFile * %s/{{NAME}}/\=template_name/ge
